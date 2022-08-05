@@ -1,6 +1,14 @@
 cd /opt/
 
 sudo -i
+
+yum update -y
+amazon-linux-extras install docker -y
+service docker start
+usermod -a -G docker ec2-user
+chkconfig docker on
+
+
 sudo yum install git -y
 sudo yum install zip unzip wget -y
 sudo yum install java-1.8.0-devel -y
