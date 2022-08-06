@@ -1,6 +1,6 @@
-cd /opt/
-
 sudo -i
+
+cd /opt/
 
 yum update -y
 amazon-linux-extras install docker -y
@@ -31,7 +31,7 @@ javac
 git clone https://github.com/awsdevopsbykumar/SpringBootRestAPIMySQLDockerKubernetes.git
 cd SpringBootRestAPIMySQLDockerKubernetes/SpringBootRestAPIMySQLDockerKubernetes
 
- mvn clean package  -Dmaven.test.skip=true
+mvn clean package  -Dmaven.test.skip=true
 
 docker login
 
